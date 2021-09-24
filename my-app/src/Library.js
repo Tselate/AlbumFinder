@@ -42,7 +42,7 @@ function LibraryDisplay () {
                 <div className="library">
                     {albumLibArray.map(album => (
                         <div className="album" id={album[2]} key={album[2]}>
-                            <img src={album[4]} alt="Album cover"/>
+                            <img className="displayImg" src={album[4]} alt="Album cover"/>
                             <h2>{album[0]} by {album[1]}</h2>  
                             <a href={album[3]} className="albumLink">Listen Now</a>
                             <button className="btn remove" onClick={handleClick}>Remove from Library</button>

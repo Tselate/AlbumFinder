@@ -134,14 +134,16 @@ img {
 
 @media (min-width: 580px) {
     .displayImg {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .title {
         font-size: 2rem;
     }
 
-    .lib-title 
+    .lib-title {
+        font-size: 2.5rem;
+    }
 
     .library {
         display: grid;
