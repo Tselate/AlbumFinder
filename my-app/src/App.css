@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Klee One', cursive;
+}
+
+body {
+    background: #F0C27B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+
+}
+
+.container {
+    background-color: rgba(206, 186, 224, 0.452);
+    max-width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-title {
+    text-decoration: underline;
+    margin: 0;
+    text-shadow: 1px 1px #f3cff1c5;
+    font-weight: 600;
+}
+
+.albumForm {
+    background-color: rgba(255, 255, 255, 0.918);
+    padding: 2em 2em;
+    max-width: 90%;
+    margin: 1em auto;
+}
+
+.inputLabel {
+   font-size: 1.5rem;
+}
+
+.albumForm > input {
+    max-width: 90%;
+    border: 1px solid #4B1248;
+}
+
+.btn {
+    background-color: #4B1248;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin: 1em 0 0 0;
+    transition: all 1s;
+}
+
+.btn:focus, 
+.btn:hover {
+    transform: scale(1.1);
+}
+
+img {
+    max-width: 50%;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.363);
+}
+
+.albumLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    background-color: #4B1248;
+    border: 1px solid white;
+    border-radius: 1em;
+}
