@@ -4,6 +4,7 @@ function LibraryDisplay () {
    const albumLibrary = localStorage.getItem("albumNameKey")
    const albumLibArray = JSON.parse(albumLibrary)
 
+   // When button is cliked remove item from local stroage 
    function handleClick(e) {
        let albumId = e.target.parentNode.id
        albumLibArray.map(album => {
@@ -23,7 +24,7 @@ function LibraryDisplay () {
        })
    }
 
- 
+    //Display all of the albums inside the library
     if (albumLibArray.length === 0) {
         return <h1>Nothing in your library.</h1>
     }else {
@@ -35,17 +36,14 @@ function LibraryDisplay () {
                         <img src={album[4]} alt="Album cover"/>
                         <h2>{album[0]} by {album[1]}</h2>  
                         <a href={album[3]} className="albumLink">Listen Now</a>
-                        <button onClick={handleClick}>Remove from Library</button>
+                        <button className="btn" onClick={handleClick}>Remove from Library</button>
                    </div>
     
                  ))}
                 
             </div>
         )
-
-    }
-
-    
+    }    
 }
 
 
