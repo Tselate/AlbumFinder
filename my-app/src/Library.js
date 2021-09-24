@@ -14,7 +14,7 @@ function LibraryDisplay () {
                albumLibArray.splice(albumIndex, 1)
                console.log(albumLibArray)
                localStorage.setItem("albumNameKey", JSON.stringify(albumLibArray))
-               alert("Removed from Library")
+               alert(`${album[0]} removed from your library.`)
                console.log(albumLibArray)
                window.location.reload()
            }
@@ -24,19 +24,27 @@ function LibraryDisplay () {
        })
    }
 
+    
+
     //Display all of the albums inside the library
     if (albumLibArray.length === 0) {
-        return <h1>Nothing in your library.</h1>
+
+        return (
+            <div>
+               <h1 className="lib-title">Library</h1>
+                <h1>Nothing in your library.</h1>
+            </div>
+        )
     }else {
         return (
-            <div id="Yeslo" className="library">
-              
+            <div className="library">
+                <h1 className="lib-title">Library</h1>
                  {albumLibArray.map(album => (
-                    <div id={album[2]} key={album[2]}>
-                        <img src={album[4]} alt="Album cover"/>
+                    <div className="album" id={album[2]} key={album[2]}>
+                        <img className="displayImg" src={album[4]} alt="Album cover"/>
                         <h2>{album[0]} by {album[1]}</h2>  
                         <a href={album[3]} className="albumLink">Listen Now</a>
-                        <button className="btn" onClick={handleClick}>Remove from Library</button>
+                        <button className="btn remove" onClick={handleClick}>Remove from Library</button>
                    </div>
     
                  ))}

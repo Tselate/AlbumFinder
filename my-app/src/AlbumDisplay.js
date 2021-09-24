@@ -5,7 +5,7 @@ import LibraryDisplay from "./Library"
 // Album information Component 
 function AlbumDisplay({albumInfo}) {  
    const imageUrl= Object.values(albumInfo.image[5])
-
+  
 // Add album to the library    
    function addToLibrary() {
     // See whats in the local storage 
@@ -53,7 +53,7 @@ function AlbumDisplay({albumInfo}) {
    //Display searched album information
        return (
            <div className="albumInfo">
-               <img src={imageUrl[1] || Image} alt="Album Cover"/>
+               <img className="displayImg" src={imageUrl[1] || Image} alt="Album Cover"/>
                <h1 className="albumName">{albumInfo.name} by {albumInfo.artist}</h1>
                <a href={`${albumInfo.url}`} className="albumLink">Listen Now</a>
                <button className="btn" onClick={addToLibrary}>Add to Library</button>

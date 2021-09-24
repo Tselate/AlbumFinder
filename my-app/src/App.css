@@ -4,7 +4,9 @@
 *{
     box-sizing: border-box;
     font-family: 'Klee One', cursive;
+    margin: 0;
 }
+
 
 body {
     background: #F0C27B;  /* fallback for old browsers */
@@ -12,8 +14,23 @@ body {
     background: linear-gradient(to top, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150vh;
+    min-height: 100%;
+}
 
+.logo {
+   text-align: center;
+}
+
+.title {
+    background-image: url(./Img/library.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    padding: 1em;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
 }
 
 .container {
@@ -22,13 +39,6 @@ body {
     padding: 2em;
     margin: 0 auto;
     text-align: center;
-}
-
-.app-title {
-    text-decoration: underline;
-    margin: 0;
-    text-shadow: 1px 1px #f3cff1c5;
-    font-weight: 600;
 }
 
 .albumForm {
@@ -50,11 +60,13 @@ body {
 .btn {
     background-color: #4B1248;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 1em;
     padding: 0.5em 1em;
     margin: 1em 0 0 0;
     transition: all 1s;
+    border: 1px solid white;
+    border-radius: 1em;
 }
 
 .btn:focus, 
@@ -63,17 +75,57 @@ body {
 }
 
 img {
-    max-width: 50%;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.363);
 }
 
-.albumLink {
+.lib-title {
     color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin: 1em;
+    text-shadow: 3px 2px  rgba(0, 0, 0, 0.363);
+}
+
+.library {
+    max-width: 95%;
+    margin: 0 auto;
+    
+}
+
+.album {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.displayImg {
+    max-width: 90%;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+.album > h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 0.5em 0;   
+}
+
+.remove {
+    margin: 1em 0 0 0.5em;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: #ac1f1f;
+}
+
+.albumLink {
+
+    color: #4B1248;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.5em 1em;
-    background-color: #4B1248;
+    background-color: white;
     border: 1px solid white;
     border-radius: 1em;
 }
