@@ -4,20 +4,17 @@ import LibraryDisplay from "./Library"
 
 // Album information Component 
 function AlbumDisplay({albumInfo}) {  
-    const imageUrl= Object.values(albumInfo.image[5])
+   const imageUrl= Object.values(albumInfo.image[5])
 
+// Add album to the library    
    function addToLibrary() {
-    // localStorage.clear()
-
-    // Add to library and save to local storage 
+    // See whats in the local storage 
     let albumLibrary = JSON.parse(localStorage.getItem("albumNameKey")) || []
     
-  
-
+    // If library is empty just add the album
     if (albumLibrary.length < 1) {
-        console.log("Yes it is empty")
         albumLibrary.push([albumInfo.name, albumInfo.artist, albumInfo.mbid, albumInfo.url, imageUrl[1] || Image])
-        alert("Added to your library")
+        alert(`${albumInfo.name} added to your library`)
         localStorage.setItem("albumNameKey", JSON.stringify(albumLibrary))
         window.location.reload()
         return
@@ -28,58 +25,32 @@ function AlbumDisplay({albumInfo}) {
     console.log (albumLibrary.length)
     for (let i = 0; i < albumLibrary.length; i++)  {
         if (albumLibrary[i][2] === albumInfo.mbid) {
-            console.log("ewww")
-            alert("No stop")
+            alert(`${albumInfo.name} already saved to your libray.`)
             window.location.reload()
             doesntExistYet = 0
             break
         } else (
             doesntExistYet += 1
         )
-        console.log(doesntExistYet)
     }
 
     if (doesntExistYet < albumLibrary.length) {
-        console.log("Not ye")
-        
+        return  
     } else {
         albumLibrary.push([albumInfo.name, albumInfo.artist, albumInfo.mbid, albumInfo.url, imageUrl[1] || Image])
         doesntExistYet = false 
-        alert("Added to your library")
+        alert(`${albumInfo.name} added to your library`)
         window.location.reload()
     }
 
-
-    
-
-    // albumLibrary.push([albumInfo.name, albumInfo.artist, albumInfo.mbid, albumInfo.url, imageUrl[1] || Image])
-    
-
-    // albumLibrary.map(album => {
-    //     if (album[2] === albumInfo.mbid ) {
-    //         alert("Album already exists in library.")
-    //         window.location.reload()
-    //     } else {
-    //         albumLibrary.push([albumInfo.name, albumInfo.artist, albumInfo.mbid, albumInfo.url, imageUrl[1] || Image])
-    //     } 
-    //     return 
-    // })
-
-
-//         albumLibrary.push([albumInfo.name, albumInfo.artist, albumInfo.mbid, albumInfo.url, imageUrl[1] || Image])
+    // Set added album to local storage 
     localStorage.setItem("albumNameKey", JSON.stringify(albumLibrary))
-    // alert(`${albumInfo.name} by ${albumInfo.artist} has been added to your library.`)
-
-    console.log(albumLibrary)
-
-    
-    
    } 
 
    
-
    <LibraryDisplay/>
 
+   //Display searched album information
        return (
            <div className="albumInfo">
                <img src={imageUrl[1] || Image} alt="Album Cover"/>
