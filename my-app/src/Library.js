@@ -37,19 +37,21 @@ function LibraryDisplay () {
         )
     }else {
         return (
-            <div className="library">
-                <h1 className="lib-title">Library</h1>
-                 {albumLibArray.map(album => (
-                    <div className="album" id={album[2]} key={album[2]}>
-                        <img className="displayImg" src={album[4]} alt="Album cover"/>
-                        <h2>{album[0]} by {album[1]}</h2>  
-                        <a href={album[3]} className="albumLink">Listen Now</a>
-                        <button className="btn remove" onClick={handleClick}>Remove from Library</button>
-                   </div>
-    
-                 ))}
-                
-            </div>
+           <div>
+               <h1 className="lib-title">Library</h1>
+                <div className="library">
+                    {albumLibArray.map(album => (
+                        <div className="album" id={album[2]} key={album[2]}>
+                            <img src={album[4]} alt="Album cover"/>
+                            <h2>{album[0]} by {album[1]}</h2>  
+                            <a href={album[3]} className="albumLink">Listen Now</a>
+                            <button className="btn remove" onClick={handleClick}>Remove from Library</button>
+                    </div>
+
+                    ))}
+                    
+                </div>
+           </div>
         )
     }    
 }

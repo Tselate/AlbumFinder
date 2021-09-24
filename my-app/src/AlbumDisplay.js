@@ -2,10 +2,11 @@ import React from "react"
 import Image from "./Img/DefaultIMG.JPG"
 import LibraryDisplay from "./Library"
 
+
 // Album information Component 
 function AlbumDisplay({albumInfo}) {  
    const imageUrl= Object.values(albumInfo.image[5])
-  
+
 // Add album to the library    
    function addToLibrary() {
     // See whats in the local storage 
