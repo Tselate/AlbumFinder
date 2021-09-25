@@ -130,11 +130,25 @@ img {
     border-radius: 1em;
 }
 
+.empty {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 /* Media querys */
 
 @media (min-width: 580px) {
+    body {
+        min-height: 100vh;
+    }
+
     .displayImg {
         max-width: 80%;
+    }
+
+    .container {
+        max-width: 65%;
     }
 
     .title {
@@ -150,6 +164,4 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
-
-
 

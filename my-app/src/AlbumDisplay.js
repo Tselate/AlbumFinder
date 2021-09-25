@@ -26,6 +26,10 @@ function AlbumDisplay({albumInfo}) {
     console.log (albumLibrary.length)
     for (let i = 0; i < albumLibrary.length; i++)  {
         if (albumLibrary[i][2] === albumInfo.mbid) {
+            if (albumInfo.mbid === "") {
+                alert(`Unable to add ${albumInfo.name} to your library. ${albumInfo.name} is missing key information needed. Listen now still available.`)
+                return
+            }
             alert(`${albumInfo.name} already saved to your libray.`)
             window.location.reload()
             doesntExistYet = 0

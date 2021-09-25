@@ -9,13 +9,10 @@ function LibraryDisplay () {
        let albumId = e.target.parentNode.id
        albumLibArray.map(album => {
            if (albumId === album[2]) {
-               console.log(album)
                let albumIndex = albumLibArray.indexOf(album)
                albumLibArray.splice(albumIndex, 1)
-               console.log(albumLibArray)
                localStorage.setItem("albumNameKey", JSON.stringify(albumLibArray))
                alert(`${album[0]} removed from your library.`)
-               console.log(albumLibArray)
                window.location.reload()
            }
            return (
@@ -32,7 +29,7 @@ function LibraryDisplay () {
         return (
             <div>
                <h1 className="lib-title">Library</h1>
-                <h1>Nothing in your library.</h1>
+                <h1 className="empty">Nothing in your library.</h1>
             </div>
         )
     }else {
