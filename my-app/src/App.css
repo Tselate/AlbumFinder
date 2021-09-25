@@ -31,6 +31,7 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1em;
+    text-shadow: 3px 3px black;
 }
 
 .container {
@@ -152,7 +153,8 @@ img {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 3rem;
+        text-shadow: 3px 3px black;
     }
 
     .lib-title {
