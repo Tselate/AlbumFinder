@@ -12,7 +12,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://{Tselate}.github.io{AlbumFinder}",
+  "homepage": "https://Tselate.github.io/AlbumFinder/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
