@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AlbumFinder/static/css/main.87b73ae4.chunk.css",
-    "main.js": "/AlbumFinder/static/js/main.5e13f3d4.chunk.js",
-    "main.js.map": "/AlbumFinder/static/js/main.5e13f3d4.chunk.js.map",
+    "main.js": "/AlbumFinder/static/js/main.b36499e4.chunk.js",
+    "main.js.map": "/AlbumFinder/static/js/main.b36499e4.chunk.js.map",
     "runtime-main.js": "/AlbumFinder/static/js/runtime-main.fbef276a.js",
     "runtime-main.js.map": "/AlbumFinder/static/js/runtime-main.fbef276a.js.map",
     "static/js/2.9dd95c69.chunk.js": "/AlbumFinder/static/js/2.9dd95c69.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.fbef276a.js",
     "static/js/2.9dd95c69.chunk.js",
     "static/css/main.87b73ae4.chunk.css",
-    "static/js/main.5e13f3d4.chunk.js"
+    "static/js/main.b36499e4.chunk.js"
   ]
 }
