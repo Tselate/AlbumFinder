@@ -2,7 +2,7 @@ import React from "react"
 
 function LibraryDisplay () {
    const albumLibrary = localStorage.getItem("albumNameKey")
-   const albumLibArray = JSON.parse(albumLibrary)
+   const albumLibArray = JSON.parse(albumLibrary) || []
 
    // When button is cliked remove item from local stroage 
    function handleClick(e) {
