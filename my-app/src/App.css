@@ -14,7 +14,7 @@ body {
     background: linear-gradient(to top, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .logo {
@@ -31,7 +31,8 @@ body {
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 1em;
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px black;
+    
 }
 
 .container {
@@ -134,7 +135,7 @@ img {
 
 .empty {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -158,11 +159,14 @@ img {
     }
 
     .title {
-        padding: 1.5em;
-        text-shadow: 3px 3px black;
+        padding: 1em;
     }
 
     .lib-title {
+        font-size: 2.5rem;
+    }
+
+    .empty {
         font-size: 2.5rem;
     }
 
