@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AlbumFinder/static/css/main.f7af489b.chunk.css",
+    "main.css": "/AlbumFinder/static/css/main.e08de4f0.chunk.css",
     "main.js": "/AlbumFinder/static/js/main.4362d006.chunk.js",
     "main.js.map": "/AlbumFinder/static/js/main.4362d006.chunk.js.map",
     "runtime-main.js": "/AlbumFinder/static/js/runtime-main.fbef276a.js",
@@ -8,7 +8,7 @@
     "static/js/2.9dd95c69.chunk.js": "/AlbumFinder/static/js/2.9dd95c69.chunk.js",
     "static/js/2.9dd95c69.chunk.js.map": "/AlbumFinder/static/js/2.9dd95c69.chunk.js.map",
     "index.html": "/AlbumFinder/index.html",
-    "static/css/main.f7af489b.chunk.css.map": "/AlbumFinder/static/css/main.f7af489b.chunk.css.map",
+    "static/css/main.e08de4f0.chunk.css.map": "/AlbumFinder/static/css/main.e08de4f0.chunk.css.map",
     "static/js/2.9dd95c69.chunk.js.LICENSE.txt": "/AlbumFinder/static/js/2.9dd95c69.chunk.js.LICENSE.txt",
     "static/media/DefaultIMG.cdfe69fd.JPG": "/AlbumFinder/static/media/DefaultIMG.cdfe69fd.JPG",
     "static/media/App.css": "/AlbumFinder/static/media/library.d52c110e.JPG"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.fbef276a.js",
     "static/js/2.9dd95c69.chunk.js",
-    "static/css/main.f7af489b.chunk.css",
+    "static/css/main.e08de4f0.chunk.css",
     "static/js/main.4362d006.chunk.js"
   ]
 }
