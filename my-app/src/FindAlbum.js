@@ -44,6 +44,7 @@ function FindAlbum () {
                     type="text" 
                     name="albumN"
                     placeholder="Album Name"
+                    required 
                     value={albumN}
                     onChange= {(e) => setAlbumN(e.target.value)}
                 /> 
@@ -55,6 +56,7 @@ function FindAlbum () {
                     type="text" 
                     name="artistN"
                     placeholder="Artist Name"
+                    required
                     value={artistN}
                     onChange= {(e) => setArtistN(e.target.value)}
                 />  
